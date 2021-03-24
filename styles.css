@@ -1,0 +1,267 @@
+/* Site Stylesheet
+  1. Global Styles
+  2. Color Styles
+  3. Fonts
+  4. Text styles
+  5. Section styles
+
+======================================== */
+
+/* 1. Global Styles
+======================================== */
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+/* 2. Color Styles
+======================================== */
+
+/* Color Theme Swatches in Hex */
+.My-Color-Theme-1-hex { color: #47F586; }
+.My-Color-Theme-2-hex { color: #28A857; }
+.My-Color-Theme-3-hex { color: #A84D20; }
+.My-Color-Theme-4-hex { color: #168EF5; }
+.My-Color-Theme-5-hex { color: #1866A8; }
+
+/* Color Theme Swatches in RGBA */
+.My-Color-Theme-1-rgba { color: rgba(71, 245, 134, 1); }
+.My-Color-Theme-2-rgba { color: rgba(40, 168, 87, 1); }
+.My-Color-Theme-3-rgba { color: rgba(168, 77, 32, 1); }
+.My-Color-Theme-4-rgba { color: rgba(22, 142, 245, 1); }
+.My-Color-Theme-5-rgba { color: rgba(24, 102, 168, 1); }
+
+/* Color Theme Swatches in HSLA */
+.My-Color-Theme-1-hsla { color: hsla(141, 89, 61, 1); }
+.My-Color-Theme-2-hsla { color: hsla(142, 61, 40, 1); }
+.My-Color-Theme-3-hsla { color: hsla(19, 68, 39, 1); }
+.My-Color-Theme-4-hsla { color: hsla(207, 91, 52, 1); }
+.My-Color-Theme-5-hsla { color: hsla(207, 75, 37, 1); }
+
+.about-us h2{
+    color:#A84D20;
+}
+
+
+/* 3. Fonts
+======================================== */
+
+html{
+    font-size: 18px;
+}
+
+h1, h2, h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+h2{
+    max-width: 400px;  
+    line-height: 2rem;
+
+}
+
+h1{font-size: 2rem;}
+h2{font-size: 1.5rem;}
+h3{font-size: 1.25rem;
+    line-height: 1.5rem;
+    max-width: 600px;}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    max-width: 500px;
+    line-height: 1.3rem;
+}
+li{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    height: 2rem;
+    align-items:center;
+}
+
+.results ol{
+    list-style: inherit;
+    list-style-type: decimal;
+}
+
+/* 4. Text styles
+======================================== */
+
+
+
+/* 5. Section styles
+======================================== */
+
+nav{
+    width: 95%;
+    padding-left: 5%;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(4px);
+    color: white;
+    position: fixed;
+    top: 0px;
+}
+
+nav li{
+    display: inline-flex;
+    align-self: center;
+    padding: 1rem;
+}
+
+nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav #h1{
+    margin: auto;
+    justify-self: center;
+}
+
+nav li:not(:last-child):hover{
+    background-color: #A84D20;
+}
+
+main{
+    display: grid;
+    grid-template: 1fr repeat(2, 400px) / repeat(2, 1fr);
+    margin-top: 64px;
+}
+
+section.about-us{
+    grid-area: 1 / 1 / 2 / 3;
+    display: grid;
+    grid-template: 1fr / repeat(8, 1fr);
+    padding: 4rem 12rem;
+    grid-gap: 1rem;
+}
+.column1{grid-column: 1 / 6;}
+.column2{grid-column: 6 / 9;}
+
+.about-us h3{
+    grid-area: 1 / 6 / 2 / 9;
+}
+
+main .img{
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.results-header{
+    grid-area: 4 / 1 / 5 / 3;
+    justify-self: center;
+    max-width: none;
+    text-align: center;
+    padding: 2%;
+    width: 96%;
+    background-color: #168EF5;
+    color: white;
+}
+
+.results{
+    display:grid;
+    grid-template: 1fr / repeat(2, 1fr);
+    background-color: #168EF5;
+    color: white;
+}
+
+.results-table{
+    display:grid;
+    grid-template: 1fr / repeat(2, 1fr);
+    grid-template-areas: "header header"
+    "date date";
+    justify-items: center;
+    padding: 1rem;
+    grid-gap: 0.5rem;
+}
+
+.results-table h3{
+    grid-area: header;
+}
+
+.results-table time{
+    grid-area: date;
+}
+
+.newsletterform{
+    padding: 4rem 12rem;
+    justify-items: center;
+    display: grid;
+    background-color: #1866A8;
+    color: white;
+}
+form{
+    margin-top: 2rem;
+    display: grid;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    grid-gap: 1rem;
+}
+form input{
+    padding: 0.3rem 3rem;
+    border: none;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.submit-button{
+    justify-self: center;
+    font-size: 1.25rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    padding: 1rem;
+    background-color: #47F586;
+    color: white;
+    border: none;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3rem;
+}
+
+footer h1{
+    align-self: center;
+    color: #168EF5
+}
+
+footer div{
+    align-self: center;
+    justify-self: flex-end;
+}
+
+.fab{
+    font-size: 3rem;
+    padding: 1rem;
+    color: #168EF5;
+    transition: color 0.2s
+}
+.fab:hover{
+    color: #1866A8;;
+}
+
+/* img's
+======================================== */
+
+.img1{
+    grid-area: 2 / 1 / 3 / 2;
+    background-image: url('https://images.unsplash.com/photo-1580541832626-2a7131ee809f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1356&q=80');
+}
+.img2{
+    grid-area: 2 / 2 / 3 / 3;
+    background-image: url('https://images.unsplash.com/photo-1587742379888-e9ef61e6cf24?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80');
+}
+.img3{
+    grid-area: 3 / 1 / 4 / 2;
+    background-image: url('https://images.unsplash.com/photo-1596605153982-09138acfcc6f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1289&q=80');
+}
+.img4{
+    grid-area: 3 / 2 / 4 / 3;
+    background-image: url('https://images.unsplash.com/photo-1532959604812-c2909578fae3?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1267&q=80');
+}
