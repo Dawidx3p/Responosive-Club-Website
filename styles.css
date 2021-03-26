@@ -10,7 +10,7 @@
 /* 1. Global Styles
 ======================================== */
 a{
-    transition: all 0.2s;
+    transition: 0.2s;
 }
 a{
     color: white;
@@ -317,6 +317,18 @@ footer div{
     }
     .content:active{
         opacity: 1;
+    }
+    nav li:not(:last-child):hover{
+        background: none;
+    }
+    nav li:not(:last-child):active{
+        background-color: #A84D20;
+    }
+    .fab:hover{
+        color: #168EF5;
+    }
+    .fab:active{
+        color: #1866A8;
     }
 }
 
