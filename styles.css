@@ -310,6 +310,12 @@ footer div{
     footer div{
         justify-self: center;
     }
+    .content:hover{
+        opacity: 0;
+    }
+    .content:active{
+        opacity: 1;
+    }
 }
 
 /* img's
