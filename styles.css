@@ -9,7 +9,9 @@
 
 /* 1. Global Styles
 ======================================== */
-
+a{
+    transition: all 0.2s;
+}
 a{
     color: white;
     text-decoration: none;
